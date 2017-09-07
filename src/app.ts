@@ -9,7 +9,10 @@ class Main {
             first_method1();
 
             let sref = new Student();
-            console.log(sref.get_name());
+            sref.bar = true;
+            sref.username = "Affixus Systems"
+
+            console.log(sref);
         }catch(err){
             console.error(err);
         }
