@@ -28,4 +28,26 @@ let tempFunction2 = function() {
 export { tempFunction2 };
 
 
+export let tempFatRefObj = {
+    "title" : "Affixus Systems Pvt Ltd. ",
+
+    "method1" : function(){
+
+    },
+
+    "method2" : ()=> "Helloooo!!!",
+
+    "method3" : ()=> {
+        return "Hello World!!";
+    },
+
+    "method4" : function():string{
+        setTimeout(()=>{
+            console.log(this.title);
+        }, 5000);
+
+        return this.method2();
+    }
+};
+
 
